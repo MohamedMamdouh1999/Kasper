@@ -1,0 +1,197 @@
+:root {
+    --main-color: #0f738f;
+    --light-main-color: rgba(15, 115, 143, 0.8);
+    --second-color: #00c7fc;
+    --third-color: #aeaeae;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+p {
+    color: var(--third-color);
+    line-height: 1,7;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../IMGS/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+nav {
+    background-color: var(--main-color);
+}
+nav a {
+    color: #FFF !important;
+}
+.landing {
+    background-color: var(--light-main-color);
+    width: 70%;
+}
+@media screen and (max-width: 767px) {
+    .landing {
+        width: 100%;
+    }
+}
+.headText h2::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    left: 50%;
+    bottom: 0;
+    background-color: black;
+    transform: translate(-50%,-50%);
+}
+.headText h2::after {
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 10%;
+    left: 50%;
+    bottom: -14px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid black;
+    transform: translate(-50%,-50%);
+}
+.items i {
+    color: var(--main-color);
+}
+@media screen and (max-width:400px) {
+    img[alt="Mobile"] { 
+        width: 80%;
+    }
+}
+.achivement {
+    background-color: var(--main-color);
+}
+.design {
+    background-color: var(--main-color);
+    position: relative;
+}
+.design::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+@media screen and (max-width: 991px) {
+    .design::before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: 0;
+        width: 30px;
+        height: 100%;
+        background-color: var(--main-color);
+    }
+}
+.nav-link {
+    color: black;
+}
+.nav-link:hover,
+.nav-item .active {
+    background-color: var(--main-color) !important;
+    border-radius: 0;
+    color: white;
+}
+.path {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+.path i {
+    font-size: 20px;
+}
+.prog {
+    display: flex;
+    margin-bottom: 32px;
+}
+.prog div:nth-of-type(1) {
+    background-color: var(--main-color);
+    height: 25px;
+}
+.prog div:nth-of-type(2) {
+    background-color: var(--third-color);
+    height: 25px;
+}
+.first div:nth-of-type(1) {
+    width: 95%;
+}
+.first div:nth-of-type(2) {
+    width: 5%;
+}
+.second div:nth-of-type(1) {
+    width: 93%;
+}
+.second div:nth-of-type(2) {
+    width: 7%;
+}
+.third div:nth-of-type(1) {
+    width: 85%;
+}
+.third div:nth-of-type(2) {
+    width: 15%;
+}
+.forth div:nth-of-type(1) {
+    width: 87%;
+}
+.forth div:nth-of-type(2) {
+    width: 13%;
+}
+.carousel-indicators button {
+    background-color: var(--main-color) !important;
+    border: none !important;
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50%;
+}
+.borderColor {
+    border-color: var(--main-color) !important;
+}
+.price {
+    font-size: 50px;
+    font-weight: bold;
+}
+.btn-lg {
+    transition: color .5s, background-color .5s;
+}
+.btn-lg:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+.hrFooter {
+    width: 200px;
+    height: 2px;
+    margin: auto;
+    background-color: var(--second-color) !important;
+}
+.iconsFooter i {
+    transition: color .4s;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 20px;
+}
+.iconsFooter i:hover:nth-of-type(1) {
+    color: #1877f2;
+}
+.iconsFooter i:hover:nth-of-type(2) {
+    color: #1da1f2;
+}
+.iconsFooter i:hover:nth-of-type(3) {
+    color: #dd4b39;
+}
+.iconsFooter i:hover:nth-of-type(4) {
+    color: #8aba56;
+}
+.specialColor {
+    color: var(--second-color);
+}
